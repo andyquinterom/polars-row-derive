@@ -2,6 +2,13 @@
 name = "polars-row-derive"
 version = "0.1.0"
 edition = "2021"
+authors = ["Andrés F. Quintero <afquinteromoreano@gmail.com>"]
+description = "Macro to help convert an interator of structs into a DataFrame"
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/andyquinterom/polars-row-derive"
+repository = "https://github.com/andyquinterom/polars-row-derive"
+keywords = ["polars", "dataframe", "derive", "macro"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 [lib]
@@ -13,4 +20,4 @@ quote = { version = "1.0.35", default-features = false, features = ["proc-macro"
 syn = { version = "2.0.46", default-features = false, features = ["clone-impls", "derive", "parsing", "printing", "proc-macro"] }
 
 [dev-dependencies]
-polars = { version = "0.39.1", default-features = false, features = ["lazy"] }
+polars = { version = "^0.39.1", default-features = false, features = ["lazy"] }
